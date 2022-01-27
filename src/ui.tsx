@@ -1,11 +1,15 @@
+import "./ui.css"
+
 import * as React from "react"
-import { useState, useEffect } from "react"
 import * as ReactDOM from "react-dom"
 import * as d3 from "d3"
-import icons from "./icons"
-import { chartTypes, dummyData, interpolationFunctions, interpolationFunctionOptions } from "./config"
+
+import { chartTypes, interpolationFunctionOptions, interpolationFunctions } from "./config"
+import { useEffect, useState } from "react"
+
 import InputFile from "./InputFile"
-import "./ui.css"
+import { dummyData } from "./dummydata"
+import icons from "./icons"
 
 const chartTypeIds = Object.keys(chartTypes)
 const dimensionLabelsMap = {
